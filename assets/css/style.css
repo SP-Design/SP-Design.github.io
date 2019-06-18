@@ -1,0 +1,707 @@
+/* Created by Stefan Pollin, Saturday 20th April 2019, 4:20pm
+/* ------------- */
+
+/* CSS Index: 
+/* All, HTML, Body, Headers
+/* Font Formatting/Text-Sizing
+/* Buttons
+/* Navigation
+/* Sidebar w/ Animation & Responsive Media Queries
+/* Header, Social Links & Display Options 
+/* About Section, Media Queries
+/* Skills Section 
+/* Portfolio Section 
+/* Contact Section
+/* Footer, Back To Top Button
+/* ------------- */
+
+/* About Me Page CSS */
+
+/* ------------- */
+
+/* MAIN CSS */
+
+/* The 'box-sizing' styling isn't available in IE6/IE7 and won't load correctly */
+
+* {
+	box-sizing: border-box
+}
+html,
+body,
+h1 {
+	font-family: "Open Sans", sans-serif;
+	margin: 0
+}
+html,
+body {
+	height: 100%
+}
+/* ------------- */
+
+/* FONT/TEXT CSS */
+
+/* Font Text Formatting & Sizing CSS */
+
+.uppercase {
+	text-transform: uppercase
+}
+.center {
+	text-align: center
+}
+/* Text Sizing CSS XL, L, M, S, XS */
+
+/* Navigation Text - Buttons */
+
+.text-nav {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600
+}
+/* Header Text */
+
+.text-jumbo {
+	font-size: 80px;
+	font-family: "Fjalla One", sans-serif;
+	letter-spacing: .085em;
+}
+.text-jumbo-light {
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	opacity: .5
+}
+/* Section Title Text */
+
+.text-title {
+	font-size: 24px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700
+}
+.text-skill-title {
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: rgb(150, 150, 150)
+}
+.text-p {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400
+}
+.text-desc {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600
+}
+/* Contact Text */
+
+.text-contact {
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	color: #2a505f;
+	padding: 30px;
+}
+.text-contact-p {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+/* Footer Text */
+
+.text-footer {
+	margin-top: 30px;
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300
+}
+/* Social Links Text */
+
+.text-social {
+	font-size: 24px;
+}
+/* Button Text */
+
+.text-btn {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700
+}
+/* ------------- */
+
+/* COLOUR CSS */
+
+.colour-white {
+	color: #000;
+	background-color: #fff
+}
+.color-black {
+    color: #fff;
+    background-color: #000
+}
+/* Text Colours */
+
+.colour-text-white {
+	color: #fff
+}
+.colour-text-black {
+	color: #000
+}
+/* ------------- */
+
+/* BUTTON CSS */
+
+/* Navigation Buttons CSS */
+
+/* TO CHANGE BACK TO BLACK CHANGE COLOR BELOW */
+.nav-btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.8em;
+    color: #fff;
+    font-size: 16px;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: ease .3s
+}
+.nav-btn:hover {
+	color: #fff;
+	background-color: #2a505f
+}
+.about-btn {
+	margin: 120px;
+	color: #000;
+	background-color: #fff;
+	padding: 12px 20px;
+	border-radius: 30px;
+	border: 0;
+	border-color: #fff;
+	text-decoration: none;
+	opacity: 1;
+	transition: ease .3s
+}
+.about-btn:hover {
+	opacity: .6
+}
+@media (max-width: 767px) {
+	.about-btn {
+		margin-top: 10px;
+	}
+}
+.footer-btn {
+	color: #000;
+	background-color: #fff;
+	padding: 12px 20px;
+	border-radius: 30px;
+	border: 0;
+	border-color: #fff;
+	text-decoration: none;
+	opacity: 1;
+	transition: ease .3s;
+	vertical-align: center;
+	margin-bottom: 400px
+}
+.footer-btn:hover {
+	opacity: .6
+}
+/* ------------- */
+
+/* NAV/SIDEBAR CSS */
+
+/* Navigation CSS */
+/* TO CHANGE BACK TO WHITE CHANGE BG COLOR BELOW */
+.navbar {
+	padding: 0.5em;
+	position: fixed;
+	width: 100%;
+    z-index: 1;
+    background-color: #000
+}
+.float-right {
+	float: right
+}
+/* Sidebar CSS */
+
+/* TO TURN COLOUR BG WHITE/TEXT BLACK CHANGE BG COLOR & COLOR BELOW 
+/* IN SIDEBAR AND NAV-ITEM CSS */
+
+/* Sidebar for the rest of the site, other than main page - main page is new-sidebar */
+.sidebar {
+	height: 100%;
+    background-color: #000;
+	position: relative;
+	z-index: 1;
+	overflow: auto;
+	width: 100%;
+	min-width: 100%;
+	text-align: left;
+	padding: 12px;
+	display: block
+}
+.sidebar .navbar-item {
+    display: block;
+    color: #fff
+}
+
+/* Main page sidebar */
+.new-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: block;
+    text-align: left
+}
+.new-sidebar .navbar-item {
+    display: block;
+    color: #fff
+}
+
+.nav-item-margin {
+	margin: 16px;
+}
+
+/* Animation CSS */
+
+.animate-left {
+	position: relative;
+	animation: animate-left 0.3s
+}
+@keyframes animate-left {
+	from {
+		left: -300px;
+		opacity: 0
+	}
+	to {
+		left: 0;
+		opacity: 1
+	}
+}
+/* Media Queries for Responsive Navigation Bar 
+/* Hide Navigation Links upon screen size decrease */
+
+@media (max-width: 767px) {
+	.hide-nav-links {
+		display: none
+	}
+}
+/* Hide Sidebar upon screen */
+
+@media (min-width: 767px) {
+	.sidebar {
+		display: none
+	}
+}
+/* Hide Bars Icon on screen size full - Desktop */
+
+@media (min-width: 992px) {
+	.hide-large {
+		display: none
+	}
+}
+/* Hide Sidebar on screen-size decrease and show Bars Icon on screen-size increase */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.hide-medium {
+		display: none
+	}
+}
+/* ------------- */
+
+/* HEADER CSS */
+
+.header-img {
+	height: 100%;
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-image: url("/assets/img/header-img-alt.jpg")
+}
+
+/* Display Positioning CSS */
+
+.display-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+.display-center-bottom {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%)
+}
+/* Social Links CSS */
+
+.social-links {
+	transition: ease .3s;
+	opacity: 1;
+	padding: 10px
+}
+.social-links:hover {
+	opacity: 0.6
+}
+/* ------------- */
+
+/* ABOUT CSS */
+
+.about-section {
+	height: 600px;
+	background-color: #2a505f
+}
+.about-title {
+	padding-top: 100px;
+	padding-bottom: 50px
+}
+@media (max-width: 767px) {
+	.about-title {
+		padding-top: 34px;
+		padding-bottom: 34px
+	}
+}
+.about-text {
+	padding-left: 224px;
+	padding-right: 224px;
+}
+@media (max-width: 991px) {
+	.about-text {
+		padding-right: 35px;
+		padding-left: 35px
+	}
+}
+@media (max-width: 767px) {
+	.about-text {
+		padding-right: 20px;
+		padding-left: 20px
+	}
+}
+/* ------------- */
+
+/* SKILLS CSS */
+
+.skills-section {
+	height: 800px;
+	margin-bottom: 15px;
+	background-color: #fff
+}
+.skills-title {
+	padding-top: 120px;
+	padding-bottom: 30px
+}
+/* Skill Bar CSS */
+
+.skill-bar-full {
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 24px;
+	background-color: rgb(150, 150, 150)
+}
+.skill-bar-percent-90 {
+	background-color: #2a505f;
+	border-radius: 24px;
+	width: 90%
+}
+.skill-bar-percent-80 {
+	background-color: #2a505f;
+	border-radius: 24px;
+	width: 80%
+}
+.skill-bar-percent-70 {
+	background-color: #2a505f;
+	border-radius: 24px;
+	width: 70%
+}
+.skill-bar-margin {
+	margin-left: 260px;
+	margin-right: 260px
+}
+@media (max-width: 991px) {
+	.skill-bar-margin {
+		margin-right: 100px;
+		margin-left: 100px
+	}
+}
+@media (max-width: 767px) {
+	.skill-bar-margin {
+		margin-right: 40px;
+		margin-left: 40px
+	}
+}
+
+/* ------------- */
+
+/* PORTFOLIO CSS */
+
+.portfolio-section {
+	height: 130%;
+	background-color: #2a505f
+}
+@media (max-width: 992px) {
+	.portfolio-section {
+		height: 190%
+	}
+}
+@media (max-width: 720px) {
+	.portfolio-section {
+		height: 150%
+	}
+}
+@media (max-width: 480px) {
+	.portfolio-section {
+		height: 800%
+	}
+}
+.portfolio-title {
+	padding-top: 100px;
+	padding-bottom: 50px
+}
+.gallery {
+	border-radius: 10px;
+	opacity: 1;
+}
+.gallery:hover {
+	opacity: .8
+}
+.gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.responsive {
+	padding: 20px;
+	float: left;
+	width: 33.33333%;
+}
+@media only screen and (max-width: 991px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+/* ------------- */
+
+/* CONTACT CSS */
+
+.contact-section {
+	height: 800px;
+	background-color: #fff
+}
+.contact-title {
+	padding-top: 100px;
+	padding-bottom: 30px
+}
+/* ------------- */
+
+/* FOOTER CSS */
+
+.footer {
+	height: 140px;
+	background-color: #000;
+	color: #fff;
+	padding-top: 40px
+}
+/* ------------- */
+
+/* ABOUT ME PAGE CSS */
+
+/* About Title & Tagline CSS - Header */
+
+.abt-title {
+	font-size: 5em;
+	letter-spacing: .085em;
+	margin: 4.5rem 0 1rem;
+	font-family: 'Fjalla One'
+}
+.abt-tagline {
+	letter-spacing: .3em;
+	color: #aaa;
+	font-size: 16px;
+	font-weight: 600
+}
+.subtitle {
+	font-size: 30px;
+	margin-top: 20px;
+	font-family: 'Fjalla One'
+}
+.subtitle-p {
+	font-size: 22px;
+	margin-top: 20px;
+	font-family: 'Fjalla One'
+}
+.profile-img {
+	float: left;
+	width: 280px;
+	margin-right: 30px
+}
+.section {
+	max-width: 980px;
+	padding: 0 20px;
+	margin: 40px auto 0;
+}
+.back-btn-div {
+	margin-top: 35px;
+	margin-left: 20px;
+}
+.back-btn {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	padding: 12px 20px;
+	border-radius: 30px;
+	border: 0;
+	border-color: #fff;
+	text-decoration: none;
+	opacity: 1;
+	transition: ease .3s;
+	text-transform: uppercase;
+	font-weight: 600
+}
+.back-btn:hover {
+	opacity: .6
+}
+@media (max-width: 991px) {
+	.profile-img {
+		float: none;
+		margin: 0 auto;
+		width: 455px;
+	}
+	.about-me-text {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 780px) {
+	body {
+		font-size: .85em;
+	}
+	.page {
+		margin-top: 20px;
+	}
+	.profile-img {
+		margin-top: 25px;
+	}
+}
+
+/* Work SECTION Extra Pages CSS */
+/* CSS relating to Graphic Design pages */
+
+.teal-bg {
+	background-color: #2a505f
+}
+
+/* Graphic Design */
+.graphic-design-section {
+	height: 3000px;
+}
+
+@media (max-width: 720px) {
+	.portfolio-section {
+		height: 150%
+	}
+}
+
+.logo-height {
+	height: 1100px;
+	background-color: #2a505f
+}
+
+.portrait-height {
+	height: 1300px;
+	background-color: #2a505f
+}
+
+.logo-img {
+	display: block;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 700px;
+}
+
+.portrait-img {
+	display: block;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	width: 595px;
+	height: 842px
+}
+
+.graphic-img {
+	height: 400px;
+	width: 400px;
+}
+
+@media (max-width: 991px) {
+	.center-img {
+		width: 100%;
+		height: auto;
+		padding-left: 20px;
+		padding-right: 20px
+	}
+}
+
+.text-img-desc {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-left: 390px;
+	margin-right: 390px
+}
+@media (max-width: 991px) {
+	.text-img-desc{
+		margin-left: 40px;
+		margin-right: 40px
+	}
+}
+
+/* Photography Section */
+.photography-section {
+	height: 2100px;
+}
+
+.photo-img {
+	display: block;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px;
+	height: 700px;
+}
+
+.photography-height {
+	height: 1100px;
+}
+
+/* Film & Animation Section */
+
+video{
+	margin-left: auto;
+	margin-right: auto;
+	display: block
+}
+
+.video-height {
+	height: 1000px;
+}

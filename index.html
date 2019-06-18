@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags and Information -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Stefan Pollin's Design & Media Portfolio">
+    <meta name="author" content="Stefan Pollin">
+    <title>Stefan Pollin | Design & Media</title>
+    <!-- Custom Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicons/android-chrome-512x512.png"/>
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="vendor/fontawesome-5.9.0/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- jQuery CDN - Google API -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar - Fixed-Top -->
+    <div class="navbar">
+        <a href="#home" class="nav-btn text-nav uppercase"><i class="fa fa-home"></i> Home</a>
+        <!-- Navbar - Links -->
+        <div class="float-right hide-nav-links">
+            <a href="#about" class="nav-btn text-nav uppercase">About <i class="fa fa-address-card"></i></a>
+            <a href="#skills" class="nav-btn text-nav uppercase">Skills <i class="fa fa-hammer"></i></a>
+            <a href="#portfolio" class="nav-btn text-nav uppercase">Portfolio <i class="fa fa-images"></i></a>
+            <a href="#contact" class="nav-btn text-nav uppercase">Contact <i class="fa fa-envelope"></i></a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a Menu Icon -->
+        <!-- Here we use the JS void operator and return Undefined to ensure the same page is loaded and not a plain text version -->
+        <a href="javascript:void(0)" onclick="openSidebar()" class="nav-btn float-right hide-large hide-medium">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!---------->
+
+    <!-- Sidebar - Animated upon screen size decrease with Bars Icon -->
+    <nav class="new-sidebar" id="sidebar">
+        <a href="javascript:void(0)" onclick="closeSidebar()" class="nav-btn navbar-item nav-item-margin text-nav uppercase">Close <i class="fa fa-times-circle"></i></a>
+        <br />
+        <a href="#about" onclick="closeSidebar()" class="nav-btn navbar-item nav-item-margin text-nav uppercase">About <i class="fa fa-address-card"></i></a>
+        <a href="#skills" onclick="closeSidebar()" class="nav-btn navbar-item nav-item-margin text-nav uppercase">Skills <i class="fa fa-hammer"></i></a>
+        <a href="#portfolio" onclick="closeSidebar()" class="nav-btn navbar-item nav-item-margin text-nav uppercase">Portfolio <i class="fa fa-images"></i></a>
+        <a href="#contact" onclick="closeSidebar()" class="nav-btn navbar-item nav-item-margin text-nav uppercase">Contact <i class="fa fa-envelope"></i></a>
+    </nav>
+
+    <!-- Sidebar - Animated upon screen size decrease with Bars Icon
+    <nav class="sidebar animate-left hide-medium hide-large" style="display:none" id="sidebar">
+        <a href="javascript:void(0)" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Close <i class="fa fa-times-circle"></i></a>
+        <br />
+        <a href="#about" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">About <i class="fa fa-address-card"></i></a>
+        <a href="#skills" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Skills <i class="fa fa-hammer"></i></a>
+        <a href="#portfolio" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Portfolio <i class="fa fa-images"></i></a>
+        <a href="#contact" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Contact <i class="fa fa-envelope"></i></a>
+    </nav> -->
+
+    <!---------->
+
+    <!-- Header - Full-size image and Title/Social Links -->
+    <header class="header-img" id="home">
+        <div class="display-center center">
+            <h1 class="text-jumbo colour-text-white uppercase">Stefan Pollin</h1>
+            <br>
+            <h1 class="text-jumbo-light colour-text-white uppercase">Design & Media</h1>
+        </div>
+        <div class="display-center-bottom">
+            <a href="mailto:spdesign@gmail.com"><i class="social-links social-links-padding fa fa-envelope colour-text-white text-social"></i></a>
+            <a href="#"><i class="social-links social-links-padding fab fa-instagram colour-text-white text-social"></i></a>
+            <a href="#"><i class="social-links social-links-padding fab fa-linkedin colour-text-white text-social"></i></a>
+        </div>
+    </header>
+
+    <!---------->
+
+    <!-- About Section - Description & Button to 'About Me' page -->
+    <div class="about-section">
+        <h1 class="about-title text-title center uppercase colour-text-white" id="about">About My Design</h1>
+        <div class="about-text center">
+            <p class="text-p colour-text-white">
+                In our everyday lives we are surrounded by design; from the houses in which we live, to the cars we drive, all starting from a concept which originates on an art board of a skilled designer. One day I hope my name finds itself among the names of other successful designers and that the concepts that begin their life on my art board are viewed and appreciated by the public all over the world.
+            </p>
+            <p class="text-p colour-text-white">
+                Design is all around us, every product we use in our daily lives has been designed to some degree, either well or poorly. This is one thing that I consider often and try to take into consideration when approaching any piece of work - thorough and efficient design makes products great.
+            </p>
+            <p class="text-p colour-text-white">
+                Get a deeper insight into my day-to-day life and some thoughts on Design & Media by clicking the 'About Me' button below!
+            </p>
+            <br />
+            <br />
+            <a href="about-me.html" class="about-btn text-btn center uppercase">About Me</a>
+        </div>
+    </div>
+
+    <!---------->
+
+    <!-- Skills Section - Skills Percentage Bars -->
+    <div class="skills-section" id="skills">
+        <h1 class="skills-title text-title uppercase center">My Skills</h1>
+        <h1 class="text-skill-title uppercase center">Graphic Design <i class="fa fa-marker"></i></h1>
+        <div class="skill-bar-full skill-bar-margin">
+            <div class="skill-bar-percent-80 center colour-text-white">80%</div>
+        </div>
+        <h1 class="text-skill-title uppercase center">Film & Animation <i class="fa fa-tv"></i></h1>
+        <div class="skill-bar-full skill-bar-margin">
+            <div class="skill-bar-percent-70 center colour-text-white">70%</div>
+        </div>
+        <h1 class="text-skill-title uppercase center">3D Modelling <i class="fa fa-user-cog"></i></h1>
+        <div class="skill-bar-full skill-bar-margin">
+            <div class="skill-bar-percent-70 center colour-text-white">70%</div>
+        </div>
+        <h1 class="text-skill-title uppercase center">Photography <i class="fa fa-images"></i></h1>
+        <div class="skill-bar-full skill-bar-margin">
+            <div class="skill-bar-percent-90 center colour-text-white">90%</div>
+        </div>
+        <h1 class="text-skill-title uppercase center">Art & Craft <i class="fa fa-paint-brush"></i></h1>
+        <div class="skill-bar-full skill-bar-margin">
+            <div class="skill-bar-percent-70 center colour-text-white">70%</div>
+        </div>
+        <h1 class="text-skill-title uppercase center">Metal & Woodwork <i class="fa fa-tools"></i></h1>
+        <div class="skill-bar-full skill-bar-margin">
+            <div class="skill-bar-percent-80 center colour-text-white">80%</div>
+        </div>
+    </div>
+
+    <!---------->
+
+    <!-- Portfolio Section - Six Category Section with links to Portfolio Sections -->
+    <div class="portfolio-section">
+        <h1 class="portfolio-title text-title center uppercase colour-text-white" id="portfolio">My Portfolio</h1>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/portfolio/graphic-design/graphic-design.html">
+                    <img src="/assets/img/portfolio/art-and-craft.jpg" alt="Graphic Design Image">
+                </a>
+                <div class="text-desc colour-text-white uppercase center">Graphic Design <i class="fa fa-marker"></i></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/portfolio/film-and-animation/film-and-animation.html">
+                    <img src="/assets/img/portfolio/film-and-animation.jpg" alt="Film & Animation Image" width="600" height="400">
+                </a>
+                <div class="text-desc colour-text-white uppercase center">Film & Animation <i class="fa fa-tv"></i></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/portfolio/3d-modelling/3d-modelling.html">
+                    <img src="/assets/img/portfolio/3d-modelling.jpg" alt="3D Modelling Image" width="600" height="400">
+                </a>
+                <div class="text-desc colour-text-white uppercase center">3D Modelling <i class="fa fa-user-cog"></i></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/portfolio/photography/photography.html">
+                    <img src="/assets/img/portfolio/photography.jpg" alt="Photography Image" width="600" height="400">
+                </a>
+                <div class="text-desc colour-text-white uppercase center">Photography <i class="fa fa-images"></i></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/portfolio/art-and-craft/art-and-craft.html">
+                    <img src="/assets/img/portfolio/1.jpg" alt="Art & Craft Image" width="600" height="400">
+                </a>
+                <div class="text-desc colour-text-white uppercase center">Art & Craft <i class="fa fa-paint-brush"></i></div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/portfolio/metal-and-woodwork/metal-and-woodwork.html">
+                    <img src="/assets/img/portfolio/metal-and-woodwork.jpg" alt="Metal & Woodwork Image" width="600" height="400">
+                </a>
+                <div class="text-desc colour-text-white uppercase center">Metal & Woodwork <i class="fa fa-tools"></i></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <!---------->
+
+    <div class="contact-section" id="contact">
+        <h1 class="contact-title text-title uppercase center">Contact Me</h1>
+        <h1 class="text-contact center uppercase">Location <i class="fa fa-map-marker-alt"></i><br /></h1>
+        <h1 class="text-contact-p center">Belfast, Northern Ireland<br /></h1>
+        <h1 class="text-contact center uppercase">Telephone Contact <i class="fa fa-phone"></i><br /></h1>
+        <h1 class="text-contact-p center">+358 46 545 3892<br /></h1>
+        <h1 class="text-contact center uppercase">Email Contact <i class="fa fa-envelope"></i><br /></h1>
+        <h1 class="text-contact-p center">spdesign96@outlook.com<br /></h1>
+    </div>
+
+    <!---------->
+
+    <!-- Footer - Back-To-Top Button & Social Links -->
+    <footer class="footer center">
+        <a href="#home" class="footer-btn text-btn center uppercase"><i class="fa fa-arrow-up"></i> Back To Top</a>
+        <h1 class="text-footer center colour-text-white">Developed by Stefan Pollin, 2019</h1>
+    </footer>
+
+    <!-- Sidebar Javascript File Link for Opening and Closing upon screen size minimising -->
+    <script src="/assets/js/new-sidebar.min.js"></script>
+
+    <!-- Scroll jQuery File Link for Smooth Scrolling on Anchor tag clicks -->
+    <script src="/assets/js/jquery.scroll.min.js"></script>
+</body>
+</html>
+

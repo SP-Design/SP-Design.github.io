@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags and Information -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Stefan Pollin's Design & Media Portfolio">
+    <meta name="author" content="Stefan Pollin">
+    <title>Stefan Pollin | Photography</title>
+    <!-- Custom Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicons/android-chrome-512x512.png"/>
+    <!-- Custom CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="/vendor/fontawesome-5.9.0/css/all.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Navbar - Fixed-Top -->
+    <div class="navbar">
+        <a href="/index.html" class="nav-btn text-nav uppercase"><i class="fa fa-home"></i> Home</a>
+        <!-- Hide right-floated links on small screens and replace them with a Menu Icon -->
+        <!-- Here we use the JS void operator and return Undefined to ensure the same page is loaded and not a plain text version -->
+        <a href="javascript:void(0)" class="nav-btn float-right" onclick="openSidebar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!---------->
+
+    <!-- Sidebar - Animated upon screen size decrease with Bars Icon -->
+    <nav class="sidebar animate-left hide-medium hide-large" style="display:none" id="sidebar">
+        <a href="javascript:void(0)" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Close <i class="fa fa-times-circle"></i></a>
+        <br />
+        <a href="/portfolio/graphic-design/graphic-design.html" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Graphic Design <i class="fa fa-marker"></i></a>
+        <a href="/portfolio/film-and-animation/film-and-animation.html" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Film & Animation <i class="fa fa-tv"></i></a>
+        <a href="/portfolio/3d-modelling/3d-modelling.html" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">3D Modelling <i class="fa fa-user-cog"></i></a>
+        <a href="/portfolio/photography/photography.html" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Photography <i class="fa fa-images"></i></a>
+        <a href="/portfolio/art-and-craft/art-and-craft.html" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Art & Craft <i class="fa fa-paint-brush"></i></a>
+        <a href="/portfolio/metal-and-woodwork/metal-and-woodwork.html" onclick="closeSidebar()" class="nav-btn navbar-item text-nav uppercase">Metal & Woodwork <i class="fa fa-tools"></i></a>
+    </nav>
+
+    <!-- Portfolio Section - Six Category Section with links to Portfolio Sections -->
+    <div class="photography-height teal-bg" id="home">
+        <h1 class="portfolio-title text-title center uppercase colour-text-white" id="portfolio">Frozen Ice Sheets, Pietarsaari, Finland</h1>
+            <img src="/assets/img/photography/IMG 5.jpg" class="photo-img" alt="">
+            <div class="text-img-desc colour-text-white center">
+            
+            </div>
+    </div>
+
+    <!---------->
+
+    <!-- Footer - Back-To-Top Button & Social Links -->
+    <footer class="footer center">
+        <h1 class="text-footer center colour-text-white">Developed by Stefan Pollin, 2019</h1>
+    </footer>
+    
+    <!-- Sidebar Javascript File Link for Opening and Closing upon screen size minimising -->
+    <script src="/assets/js/sidebar.min.js"></script>
+
+</body>
+</html>
